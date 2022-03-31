@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* border: 1px solid black; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: relative;
+    top: 15px;
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#left-menu ul, #right-menu ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+nav li a {
+    font-size: 1.5rem;
+}
+
+nav li a:hover {
+    text-decoration: underline;
+}
+
+#right-menu button {
+    background-color: #4285F4;
+    cursor: pointer;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+    min-width: 7rem;
+    min-height: 2.75rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+#right-menu button:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#appicon {
+    vertical-align: middle;
+    opacity: 0.6;
+    width: 2.75rem;
+}
+
+#appicon:hover {
+    opacity: 1;
+}
+
+#search-bar {
+    position: relative;
+    min-width: 45rem;
+}
+
+#magnifying-glass {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+#mic {
+    width: 20px;
+    height: auto;
+    position: absolute;
+    top: 52.5px;
+    right: 15px;
+}
+
+#google-logo {
+    min-width: 400px;
+}
+
+#search-bar>input {
+    border: 1px solid rgb(200, 199, 199);
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 30px;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+    font-size: 1.5rem;
+    outline: none;
+}
+
+main section {
+    min-width: 30%;
+    min-height: 50%;
+    text-align: center;
+}
+
+#buttons button {
+    min-width: 10rem;
+    font-size: 1.3rem;
+    min-height: 4rem;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid white;
+    outline: none;
+    opacity: 0.7;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+#buttons button:hover {
+    opacity: 1;
+    color: black;
+    border: 1px solid lightgray;;
+    box-shadow: 0.7px 0.7px 0.7px lightgray;
+}
+
+#search-engine p {
+    margin-top: 1.3rem;
+    font-size: 1.25rem;
+}
+
+#search-engine p span {
+    font-size: 1.25rem;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #f2f2f2;
+    align-items: center;
+}
+
+footer * {
+    font-size: 1.25rem;
+    color: #5f6368;
+}
+
+#footer-top {
+    border-bottom: 1px solid lightgray;
+    min-height: 5vh;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    min-height: 5vh;
+    align-items: center;
+    width: 97%;
+    margin: auto;
+}
+
+#footer-left ul, #footer-right ul {
+    display: flex;
+}
+
+#footer-left ul li, #footer-right ul li {
+    margin-right: 1.2rem;
+
+}
+
+#footer-left ul li:hover, #footer-right ul li:hover {
+    text-decoration: underline;
+}
